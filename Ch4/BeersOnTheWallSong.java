@@ -27,7 +27,7 @@ public class BeersOnTheWallSong extends ConsoleProgram {
 			/* It was necessary to make minus i, so the song would continue
 			 * in a proper way. That means that in the middle of the lyrics
 			 * i will be subtracted and keep the idea of the song intacted
-			 * by the code, and yet chosen by the cliet.*/
+			 * by the code, and yet chosen by the client.*/
 			
 			println( i-1 + " bottles of beer on the wall.");
 			
