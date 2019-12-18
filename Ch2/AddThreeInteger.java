@@ -9,7 +9,6 @@
 //imports
 import acm.program.*;
 
-
 /*Pre-condition: This program adds only 2 integers
  * 
  *Post-Condition: This program adds now 3 integers
@@ -20,7 +19,7 @@ import acm.program.*;
 
 
 public class AddThreeInteger extends ConsoleProgram {
-	public void run () {
+	public void run() {
 		println("This program adds three integers.");
 		int n1 = readInt("Enter number 1: ");
 		int n2 = readInt("Enter number 2: ");
@@ -28,5 +27,4 @@ public class AddThreeInteger extends ConsoleProgram {
 		int total = n1 + n2 + n3;
 		println("The total is " + total + ".");
 	}
-
 }
