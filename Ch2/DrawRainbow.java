@@ -17,13 +17,15 @@ import org.slf4j.LoggerFactory;
  */
 public class DrawRainbow extends GraphicsProgram {
     public void run() {
-        Logger logger = LoggerFactory.getLogger(DrawRainbow.class);
+        Logger log = LoggerFactory.getLogger(getClass());
         GOval[] strips = new GOval[7];
+        log.info("strip.lenth = {} ", strips.length);
+        assert strips.length == 7 : "Wrong length";
         Color[] cls    = new Color[]{Color.red, Color.orange, Color.yellow, Color.green, Color.blue, Color.magenta, Color.cyan};
         this.setBackground(Color.cyan);
         for (int i = 0; i < 7; i++) {
             strips[i] = new GOval((i*50 - 325), ((i+1)*50), (1400 - i*100), (1400 - i*100));
-            logger.debug("i = {} \t x = {} \t y = {} \t width = {} \t height = {} \t color = {} ", i,(i*50 - 325), ((i+1)*50), (1400 - i*100), (1400 - i*100), cls[i]);
+            log.debug("i = {} \t x = {} \t y = {} \t width = {} \t height = {} \t color = {} ", i,(i*50 - 325), ((i+1)*50), (1400 - i*100), (1400 - i*100), cls[i]);
             strips[i].setFillColor(cls[i]);
             strips[i].setFilled(true);
             add(strips[i]);
