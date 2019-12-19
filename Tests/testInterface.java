@@ -1,6 +1,6 @@
 /**
  * This file demonstrates the interface and implement. We create an interface Animal
- * with 2 method animalSound() and sleep(). Then we create a class Pig to implements Animal Interface
+ * with 2 methods animalSound() and sleep(). Then we create a class Pig to implements Animal Interface
  * Infact, there are many interfaces available, we can use it
  */
 interface Animal {
