@@ -10,21 +10,15 @@ import java.awt.*;
  */
 public class DrawOlympicRing extends GraphicsProgram {
     public void run() {
-        GOval r1 = new GOval(150,50,100,100);
-        r1.setColor(Color.blue);
-        add(r1);
-        GOval r2 = new GOval(205,120,100,100);
-        r2.setColor(Color.yellow);
-        add(r2);
-        GOval r3 = new GOval(260,50,100,100);
-        r3.setColor(Color.black);
-        add(r3);
-        GOval r4 = new GOval(315,120,100,100);
-        r4.setColor(Color.green);
-        add(r4);
-        GOval r5 = new GOval(370,50,100,100);
-        r5.setColor(Color.red);
-        add(r5);
+        Logger log = LoggerFactory.getLogger(getClass());
+        GOval[] r = new GOval[5];
+        Color[] cls    = new Color[]{Color.blue, Color.yellow, Color.black, Color.green, Color.red};
+        for (int i = 0; i < 5; i++) {
+            r[i] = new GOval((150 + i*55), (i%2==0?50:120), 100, 100);
+            log.debug("i = {} \t x = {} \t y = {} \t width = {} \t height = {} \t color = {} ", i,(150+i*55), (i%2==0?50:120), (100), (100), cls[i]);
+            r[i].setColor(cls[i]);
+            add(r[i]);
+        }
     }
 }
     
