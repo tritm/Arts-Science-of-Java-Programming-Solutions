@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
  * Index of list is from 0 to 6, index of
  * Color.red is cls[0], use [] but not () to get an object from list
  * Log configuration: /Users/tritm/Documents/Codes/ArtScienceofJava/Arts-Science-of-Java-Programming-Solutions/Resources/simplelogger.properties
- * we can config for it to show levels: Debug > Info > Warn > Error
+ * we can config for it to show levels: Debug  Info  Warn  Error
  */
 public class DrawRainbow extends GraphicsProgram {
     public void run() {
