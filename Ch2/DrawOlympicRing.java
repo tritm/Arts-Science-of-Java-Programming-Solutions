@@ -15,7 +15,7 @@ public class DrawOlympicRing extends GraphicsProgram {
     private static final int X0 = 150; // x of left most ring
     private static final int YL = 50; // y of lower ring
     private static final int YH = 120; // y of higher ring
-
+    @Override
     public void run() {
         this.setBackground(Color.white);
         Logger log = LoggerFactory.getLogger(getClass());

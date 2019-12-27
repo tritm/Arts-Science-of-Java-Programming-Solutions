@@ -18,7 +18,9 @@ public class DrawArcheryTarget extends GraphicsProgram {
     private static final int Y0 = 250; // y original of outer most ring
 
     public void run() {
-//        Logger log = LoggerFactory.getLogger(getClass());
+
+        Logger log = LoggerFactory.getLogger(getClass());
+        log.info("Width = {} Height = {}", getWidth(), getHeight());
         GOval r1 = new GOval(X0 - D0/2, Y0 - D0/2, D0, D0);
         GOval r2 = new GOval(X0 - D1/2, Y0 - D1/2, D1, D1);
         GOval r3 = new GOval(X0 - D2/2, Y0 - D2/2, D2, D2);

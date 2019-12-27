@@ -31,5 +31,6 @@ public class DrawSnowMan extends GraphicsProgram {
 		//body 2
 		
 		add(new GOval(87, 139, 110, 110 ));
+		System.out.println();
 	}
 }
