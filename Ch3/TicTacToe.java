@@ -10,7 +10,4 @@ public class TicTacToe extends GraphicsProgram {
         add(new GLine((w + 30)/2,(h - BOARD_SIZE)/2,(w + 30)/2,(h + BOARD_SIZE)/2));
     }
     private static final int BOARD_SIZE = 90;
-
-
-
 }
