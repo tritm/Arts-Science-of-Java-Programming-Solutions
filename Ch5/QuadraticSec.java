@@ -1,4 +1,4 @@
-package ChFive;
+
 /*
  * File:QuadraticSec.java
  * -------------------------------
@@ -23,7 +23,7 @@ package ChFive;
  * step 2: calculate the value above the under score.
  * step 3: divide the above value with the value below. 
  */
-
+package Ch5;
 import acm.program.*;
 
 public class QuadraticSec extends ConsoleProgram {

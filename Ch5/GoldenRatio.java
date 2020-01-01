@@ -1,4 +1,4 @@
-package ChFive;
+
 /*
  * File:GoldenRatio.java
  * ----------------------------------
@@ -9,6 +9,7 @@ package ChFive;
  */
 
 import acm.program.*;
+
 
 public class GoldenRatio extends ConsoleProgram{
 	

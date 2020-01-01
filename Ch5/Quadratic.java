@@ -5,8 +5,6 @@
  * Also known as The Bhaskara Formula.
  */
 
-package ChFive;
-
 import acm.program.*;
 
 public class Quadratic extends ConsoleProgram{
