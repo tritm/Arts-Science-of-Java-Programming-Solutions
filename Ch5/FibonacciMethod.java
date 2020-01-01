@@ -1,8 +1,6 @@
-/**File: FibonacciSequence.java
+/**File: FibonacciMethod.java
  * --------------------------------
- * This program will print a Fibonacci's Sequence
- * below 10,000.
- * modified from:beginnersbook.com
+ * Recursive Fibonacci
  */
 
 import org.slf4j.Logger;
