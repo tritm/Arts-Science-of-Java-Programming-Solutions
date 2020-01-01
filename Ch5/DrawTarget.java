@@ -21,6 +21,8 @@ public class DrawTarget extends GraphicsProgram {
         add(createFilledCircle(X0, Y0, D0, Color.red));
         add(createFilledCircle(X0, Y0, D1, Color.white));
         add(createFilledCircle(X0, Y0, D2, Color.red));
+        add(createFilledCircle(X0, Y0, D3, Color.white));
+        add(createFilledCircle(X0, Y0, D4, Color.red));
 
     }
     private GOval createFilledCircle(double x, double y, double r, Color color) {
@@ -29,9 +31,12 @@ public class DrawTarget extends GraphicsProgram {
         circle.setFilled(true);
         return circle;
     }
-    private static final int DELTA = 50; // Step size of diameter of the rings
+    private static final int DELTA = 30; // Step size of diameter of the rings
     private static final int D0 = 150; //Diameter of outer most ring
     private static final int D1 = D0 - DELTA;
-    private static final int D2 = D0 -2*DELTA;
+    private static final int D2 = D1 - DELTA;
+    private static final int D3 = D2 - DELTA;
+    private static final int D4 = D3 - DELTA;
+
 }
     
