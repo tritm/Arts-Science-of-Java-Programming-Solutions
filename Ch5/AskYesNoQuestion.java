@@ -25,7 +25,7 @@ public class AskYesNoQuestion extends ConsoleProgram {
     }
     private boolean askYesNoQuestion(String s) {
         String result = readLine(s);
-        if (result.contentEquals("yes") || result.contentEquals("no")) return false;
+        if (result.equals("yes") || result.equals("no")) return false;
         else return true;
     }
 }
