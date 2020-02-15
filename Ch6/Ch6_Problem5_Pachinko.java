@@ -18,6 +18,7 @@ public class Ch6_Problem5_Pachinko extends ConsoleProgram {
         String play = readLine("You have $50. Would you like to play? ");
         if (play.equals("n") | play.equals("no")) exit();
 
+
         int M1, M2, M3;
         int budget = 50;
         while (budget >= 0) {
@@ -41,31 +42,40 @@ public class Ch6_Problem5_Pachinko extends ConsoleProgram {
 
     }
     private int calculatePrize(int budget, int m1, int m2, int m3){
-        if (m1 == BAR && m2 == BAR && m3 == BAR) {
+
+        boolean c1 = m1 == BAR && m2 == BAR && m3 == BAR;
+        boolean c2 = m1 == BELL && m2 == BELL && ((m3 == BELL) || (m3 == BAR));
+        boolean c3 = m1 == PLUM && m2 == PLUM && ((m3 == PLUM) || (m3 == BAR));
+        boolean c4 = m1 == ORANGE && m2 == ORANGE && ((m3 == ORANGE) || (m3 == BAR));
+        boolean c5 = m1 == CHERRY && m2 == CHERRY && m3 == CHERRY;
+        boolean c6 = m1 == CHERRY && m2 == CHERRY && ((m3 == BAR)  || (m3 == BELL) || (m3 == PLUM) || (m3 == ORANGE) || (m3 == LEMON) || (m3 == CHERRY));
+        boolean c7 = m1 == CHERRY && ((m2 == BAR)  || (m2 == BELL) || (m2 == PLUM) || (m2 == ORANGE) || (m2 == LEMON) || (m3 == CHERRY) ) && ((m3 == BAR)  || (m3 == BELL) || (m3 == PLUM) || (m3 == ORANGE) || (m3 == LEMON) || (m3 == CHERRY));
+
+        if (c1) {
             budget += 249;
             printResult(1, budget, m1, m2, m3);
         }
-        else if (m1 == BELL && m2 == BELL && ((m3 == BELL) || (m3 == BAR)) ) {
+        else if (c2) {
             budget += 19;
             printResult(2, budget, m1, m2, m3);
         }
-        else if (m1 == PLUM && m2 == PLUM && ((m3 == PLUM) || (m3 == BAR))) {
+        else if (c3) {
             budget += 13;
             printResult(3, budget, m1, m2, m3);
         }
-        else if (m1 == ORANGE && m2 == ORANGE && ((m3 == ORANGE) || (m3 == BAR) )) {
+        else if (c4) {
             budget += 9;
             printResult(4, budget, m1, m2, m3);
         }
-        else if (m1 == CHERRY && m2 == CHERRY && m3 == CHERRY ) {
+        else if (c5 ) {
             budget += 6;
             printResult(5, budget, m1, m2, m3);
         }
-        else if (m1 == CHERRY && m2 == CHERRY && ((m3 == BAR)  || (m3 == BELL) || (m3 == PLUM) || (m3 == ORANGE) || (m3 == LEMON) || (m3 == CHERRY) ) ) {
+        else if (c6) {
             budget += 4;
             printResult(6, budget, m1, m2, m3);
         }
-        else if (m1 == CHERRY && ((m2 == BAR)  || (m2 == BELL) || (m2 == PLUM) || (m2 == ORANGE) || (m2 == LEMON) || (m3 == CHERRY) ) && ((m3 == BAR)  || (m3 == BELL) || (m3 == PLUM) || (m3 == ORANGE) || (m3 == LEMON) || (m3 == CHERRY) ) ) {
+        else if (c7) {
             budget += 1;
             printResult(7, budget, m1, m2, m3);
         }
