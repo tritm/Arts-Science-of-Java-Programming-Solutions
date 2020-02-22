@@ -17,7 +17,36 @@ public class Card{
 		cardRank = rank;
 		cardSuit = suit;
 	}
+	public int getRank(){
+		return this.cardRank;
+	}
+	public int getSuit(){
+		return this.cardSuit;
+	}
+	public String toString() {
+		String cardName;
+		if (this.getRank() == 1) {
+			cardName = "This card has (rank, suit) = (" + rankList[cardRank - 1] + "," + suitList[cardSuit - 1] + ")";
+		}
+		else {
+			cardName = "This card has (rank, suit) = (" + rankList[cardRank - 10] + "," + suitList[cardSuit - 1] + ")";
+		}
+		return cardName;
+	}
+
 	private int cardRank;
 	private int cardSuit;
-
+	//List of ranks
+	public static final int ACE = 1;
+	public static final int JACK = 11;
+	public static final int QUEEN = 12;
+	public static final int KING = 13;
+	// List of suits
+	public static final int CLUB = 1;
+	public static final int DIAMONDS = 2;
+	public static final int HEART = 3;
+	public static final int SPADES = 4;
+	// List of rank name and suit name
+	public static String[] rankList = {"ACE", "JACK", "QUEEN", "KING"};
+	public static String[] suitList = {"CLUB", "DIAMONDS", "HEARTS", "SPADES"};
 }
