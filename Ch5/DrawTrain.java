@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import java.awt.*;
 
 /**
- * Draw an archery target with 3 rings
+ * Draw train
  */
 public class DrawTrain extends GraphicsProgram {
     public void run() {

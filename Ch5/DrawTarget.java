@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.awt.*;
 
 /**
- * Draw an archery target with 3 rings
+ * Draw target
  */
 public class DrawTarget extends GraphicsProgram {
 

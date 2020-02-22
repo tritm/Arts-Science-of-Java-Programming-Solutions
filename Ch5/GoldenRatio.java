@@ -1,16 +1,12 @@
+import acm.program.*;
 
-/*
- * File:GoldenRatio.java
- * ----------------------------------
+/**
  * This program demonstrate the value of the Golden Ratio.
  * ex: φ = 1 +√5
  *         ------
  *           2
+ * File:GoldenRatio.java
  */
-
-import acm.program.*;
-
-
 public class GoldenRatio extends ConsoleProgram{
 	
 	public void run() {

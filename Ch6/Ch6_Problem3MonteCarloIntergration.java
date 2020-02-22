@@ -4,11 +4,11 @@ import acm.util.RandomGenerator;
 import acm.program.*;
 import java.awt.*;
 
-/** generate random number between -100 and 100 called x
+/* generate random number between -100 and 100 called x
  * generate a random number between -100 and 100 called y
- * if x^2+y^2 <10,000 then the point is inside the circle
+ * if x^2+y^2 < 10,000 then the point is inside the circle
  * print this point as a blue dot.
- * if x^2+y^2 >10,000 then print this point as a red dot.
+ * if x^2+y^2 > 10,000 then print this point as a red dot.
  * repeat this process 10,000 times
  */
 public class Ch6_Problem3MonteCarloIntergration extends GraphicsProgram {

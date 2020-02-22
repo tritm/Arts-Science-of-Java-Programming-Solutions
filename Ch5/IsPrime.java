@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.awt.*;
 
 /**
- * Draw an archery target with 3 rings
+ * Check whether a number is prime
  */
 public class IsPrime extends ConsoleProgram {
     public void run() {

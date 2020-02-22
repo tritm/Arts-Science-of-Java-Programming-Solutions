@@ -1,11 +1,11 @@
-/**File: FibonacciMethod.java
- * --------------------------------
- * Recursive Fibonacci
- */
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import acm.program.ConsoleProgram;
+
+/**
+ * Recursive Fibonacci
+ * File: FibonacciMethod.java
+ */
 
 public class FibonacciMethod extends ConsoleProgram {
 	Logger log = LoggerFactory.getLogger(getClass());
@@ -23,7 +23,5 @@ public class FibonacciMethod extends ConsoleProgram {
 		return fibonacci(n-1) + fibonacci(n-2);
 	}
 }
-
-
 
 

@@ -1,11 +1,11 @@
-/**File: FibonacciMethod.java
- * --------------------------------
- * Recursive Fibonacci
- */
-
 import acm.program.ConsoleProgram;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+/**
+ * Raise int to power
+ * File: RaiseIntToPower.java
+ */
 
 public class RaiseIntToPower extends ConsoleProgram {
 	Logger log = LoggerFactory.getLogger(getClass());

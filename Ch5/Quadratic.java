@@ -1,11 +1,10 @@
-/*
- * File:Quadratic.java
- * -------------------------------
+import acm.program.*;
+
+/**
  * This program calculates the Quadratic equation.
  * Also known as The Bhaskara Formula.
+ * File:Quadratic.java
  */
-
-import acm.program.*;
 
 public class Quadratic extends ConsoleProgram{
 	

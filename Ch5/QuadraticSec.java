@@ -1,13 +1,12 @@
-
-/*
- * File:QuadraticSec.java
- * -------------------------------
+import acm.program.*;
+/**
  * This program calculates the Quadratic equation.
+ * File:QuadraticSec.java
  */
 
 /*
  * Pre-condition: The previous program made this calculation using bottom to top design.
- * It also used values instead of methods. 
+ * It also used values instead of methods.
  */
 
 /*
@@ -17,15 +16,12 @@
  */
 
 /*The quadratic equation is: x  = –b ±√b^2 – 4ac
- * 								 ---------------							      
+ * 								 ---------------
  *									   2a
  * step 1: calculate the value under the square root.
  * step 2: calculate the value above the under score.
- * step 3: divide the above value with the value below. 
+ * step 3: divide the above value with the value below.
  */
-package Ch5;
-import acm.program.*;
-
 public class QuadraticSec extends ConsoleProgram {
 	
 	public void run () {

@@ -16,12 +16,18 @@ class Pig implements Animal {
         System.out.println("The pig sleep: Zzz");
     }
 }
-
+class Dog implements Animal {
+    public void animalSound() {System.out.println("The dog says: gau gau");}
+    public void sleep() {System.out.println("The dog sleep: Zzz");}
+}
 public class testInterface {
     public static void main(String[] args) {
         Pig myPig = new Pig();
         myPig.animalSound();
         myPig.sleep();
+        Dog myDog = new Dog();
+        myDog.animalSound();
+        myDog.sleep();
     }
 }
 

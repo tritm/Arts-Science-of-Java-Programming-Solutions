@@ -1,11 +1,11 @@
-/**File: FibonacciMethod.java
- * --------------------------------
- * Recursive Fibonacci
- */
-
 import acm.program.ConsoleProgram;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+/**
+ * Sum digit
+ * File: DigitSum.java
+ */
 
 public class DigitSum extends ConsoleProgram {
 	Logger log = LoggerFactory.getLogger(getClass());

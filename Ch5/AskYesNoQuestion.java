@@ -8,7 +8,8 @@ import org.slf4j.LoggerFactory;
 import java.awt.*;
 
 /**
- * Draw an archery target with 3 rings
+ * Ask yes no question
+ * File: AskYesNoQuestion.java
  */
 public class AskYesNoQuestion extends ConsoleProgram {
 
