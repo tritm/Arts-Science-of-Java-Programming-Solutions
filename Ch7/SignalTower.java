@@ -9,7 +9,7 @@ public class SignalTower {
      */
     public SignalTower(String name, SignalTower link) {
         towerName = name;
-        nextTower = link;
+        nextTower = link; // pointer to next object address
     }
 
     /**
