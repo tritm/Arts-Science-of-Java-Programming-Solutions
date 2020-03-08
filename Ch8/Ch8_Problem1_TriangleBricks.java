@@ -6,7 +6,7 @@ import java.util.*;
 import acm.graphics.*;
 
  public class Ch8_Problem1_TriangleBricks extends GraphicsProgram{
-	 
+
 	 public void run() {
 		 
 		 //rect(50,50);
